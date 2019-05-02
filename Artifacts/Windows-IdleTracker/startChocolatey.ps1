@@ -237,6 +237,7 @@ try {
     }
 
     Invoke-ChocolateyPackageInstaller -UserName $UserName -Password $Password -PackageList $PackageList
+    & "C:\Users\vincentvanherreweghe\Desktop\StudentIdleTracker.exe" /run /exit /SilentMode
 }
 catch {
     Handle-LastError
