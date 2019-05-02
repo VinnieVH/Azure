@@ -1,0 +1,17 @@
+{
+    "title": "Install Idle Tracker",
+    "publisher": "Academic Software BVBA",
+    "description": "Installs the idle tracker program to track how long the computer has been idle so far.",
+    "tags": [
+        "Signpost",
+        "Idle",
+        "Release",
+        "Build",
+        "Windows"
+    ],
+    "targetOsType": "Windows",
+    "parameters": {},
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./run.ps1',' -Account ', parameters('Account'), ' -PersonalAccessToken ', parameters('PersonalAccessToken'), ' -AgentName ''', parameters('AgentName'), ''' -AgentNamePrefix ''', parameters('AgentNamePrefix'), ''' -PoolName ''', parameters('PoolName'), ''' -AgentCount ''', parameters('AgentCount'), '''\"')]"
+    }
+}
